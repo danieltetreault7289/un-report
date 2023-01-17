@@ -1,3 +1,5 @@
 We plotted life expectancy over time.
 
+Each point represents a country. 
+
 Grassroots computational analysis of international data recording diverse sociological and financial variables.
