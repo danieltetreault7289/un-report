@@ -64,3 +64,6 @@ The maximum GDP in USD is `r maxGDP`, using inline code.
 gapminder_1997 %>% 
   filter(continent == "Oceania") %>% 
   kable()
+```
+
+the end!
