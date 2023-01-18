@@ -93,11 +93,17 @@ gdp_co2_plot <- joined_co2_pop %>%
   ggplot(aes(x = gdpPercap, y = per_capita_emissions)) +
   labs (x = "GDP per Capita (USD)", y = "Per Capita CO2 Emissions (metric tons)", title = "It's possible to have high GDP and low CO2 emissions!") +
   geom_point(color = "cornflowerblue") +
+ ## xlim(0, 50000) +
+  ##ylim(0, 30) +
   geom_smooth(color = "pink", method = "lm") + ##se = FALSE to get rid of gray shadow
   labs(caption = "Pink line represents standard linear regression model.") +
   theme_classic() +
-  ggpubr::stat_regline_equation(aes(label = after_stat(rr.label)))+
-  theme(plot.background = element_rect(fill = "pink"))
+  ggpubr::stat_regline_equation(aes(label = after_stat(rr.label))) +
+  theme(plot.background = element_rect(fill = "pink")) 
+ 
+
+## ex. annotate('text', x = 3, y = 13.5, label = 'C')
+## annotate('text', x = 33385, y = 5.438, label = "sverige") +
 
 install.packages("ggpubr")
 library(ggpubr)
